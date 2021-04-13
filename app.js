@@ -100,11 +100,20 @@ function launch(){
             else if (maxminutes - i === 18){
                 explosion.play()
             }
-            //document.getElementById("timeleft").innerHTML = maxminutes - i;
-            i++} else{ i = undefined ; 
+            else if (maxminutes - i === 0){
+                window.alert("BOUM");
+                i = undefined;
                 launch_permission = true;
-                document.getElementById("syllabe").innerHTML = "BOUM";
-                exit};
+                return ;
+            }
+            //document.getElementById("timeleft").innerHTML = maxminutes - i;
+            i++}
+
+             //else{ i = undefined ; 
+                //launch_permission = true;
+                //document.getElementById("boum").innerHTML = "BOUM";
+                //window.alert("BOUM.")
+                //exit};
     }
 }
 
